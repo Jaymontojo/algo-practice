@@ -13,8 +13,16 @@ class Field {
     this.field[row][col] = !this.board[row][col];
     return this.field;
   };
-  
+
   hasBeenVisited(row, col) {
     return this.board [row][col];
   };
 };
+
+class UniqePaths {
+  constructor(size){
+    this.field = new Field(size);
+    this.row = 0;
+    this.col = 0;
+  };
+}
