@@ -13,5 +13,8 @@ class Field {
     this.field[row][col] = !this.board[row][col];
     return this.field;
   };
-
+  
+  hasBeenVisited(row, col) {
+    return this.board [row][col];
+  };
 };
