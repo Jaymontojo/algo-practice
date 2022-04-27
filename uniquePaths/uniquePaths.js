@@ -7,5 +7,11 @@ class Field {
         this.field[row].push(false);
       };
     }; 
-  }
+  };
+
+  visitLocation(row, col) {
+    this.field[row][col] = !this.board[row][col];
+    return this.field;
+  };
+
 };
