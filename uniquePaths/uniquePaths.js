@@ -25,4 +25,12 @@ class UniqePaths {
     this.row = 0;
     this.col = 0;
   };
+
+  solve(){
+    return this.move(this.row, this.col);
+  };
+
+  move(row, col) {
+    //tbd
+  }
 }
